@@ -12,5 +12,6 @@
 */
 
 Route::prefix('contact')->group(function() {
-    Route::get('/', 'ContactController@index');
+    Route::get('/', 'ContactController@index')->name('main.contact');
 });
+
